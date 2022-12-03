@@ -1,0 +1,13 @@
+a)
++ operation will run 5 times (i=i+1)
+* operation will run 5 times (f=i*f)
+In total 11 operation 
+no - or / operation. 
+
+b)
+The arithmetic operation + will run (n)
+and * will run as much as the given n 
+
+
+general rule for any positive intger (2*n)
+

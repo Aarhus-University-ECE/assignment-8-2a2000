@@ -44,14 +44,25 @@ bool compareArrays(int arr1[], int arr2[], int arrSize)
     }
     return true;
 }
+
+
+
 // For testing purposes only
 void testLinkedListInsertionSort(int randomArray[], int sortedArray[], int linkedListArray[], int arraySize)
 {
     linked_list * llPtr = convertArrayToLinkedList(randomArray, arraySize);
     convertLinkedListToArray(llPtr, linkedListArray);
     assert(compareArrays(randomArray, linkedListArray, arraySize) == true); // checks array and linked list are equal
+
+    printf("before: \n");
+    printLL(llPtr);
     sort(llPtr);
+    printf("after: \n");
+    printLL(llPtr);
+
     convertLinkedListToArray(llPtr, linkedListArray);
+
+
     REQUIRE(compareArrays(sortedArray, linkedListArray, arraySize) == true); // check sorted array and sorted linked list are equal
 
 }

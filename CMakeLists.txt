@@ -7,6 +7,7 @@ set(CMAKE_CXX_STANDARD 14)
 # define library called queue that can imported into other targets via
 # 'target_link_libraries'
 add_library(mymath src/insertion_sort.c src/linked_list.c src/list_queue.c)
+target_compile_options(mymath PUBLIC -g -O0)
 target_include_directories(mymath PUBLIC include)
 
 # define executable named main for experimenting and debugging code
